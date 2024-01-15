@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E9F0"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/queNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_semibold"
+        android:text="1/10"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textBg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBg"
+        android:layout_width="380dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="105dp"
+        android:background="@drawable/quebg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/answer1"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/manrope_semibold"
+        android:background="@drawable/button2"
+        android:text="Button"
+        app:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBg" />
+
+    <Button
+        android:id="@+id/answer2"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button2"
+        android:text="Button"
+        app:backgroundTint="@color/grey"
+        android:fontFamily="@font/manrope_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer1" />
+
+    <Button
+        android:id="@+id/answer3"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button2"
+        android:text="Button"
+        app:backgroundTint="@color/grey"
+        android:fontFamily="@font/manrope_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer2" />
+
+    <Button
+        android:id="@+id/answer4"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/manrope_semibold"
+        android:background="@drawable/button2"
+        android:text="Button"
+        app:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer3" />
+
+    <TextView
+        android:id="@+id/questionTV"
+        android:layout_width="288dp"
+        android:layout_height="132dp"
+        android:fontFamily="@font/manrope_semibold"
+        android:text="The average number of key comparisons done in a successful sequential search in a list of length n is"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textBg"
+        app:layout_constraintEnd_toEndOf="@+id/textBg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textBg"
+        app:layout_constraintTop_toTopOf="@+id/textBg"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button2"
+        android:fontFamily="@font/manrope_semibold"
+        android:text="Submit"
+        app:backgroundTint="#8FBCBB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer4"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
